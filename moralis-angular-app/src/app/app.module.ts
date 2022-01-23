@@ -10,7 +10,7 @@ import { UserComponent } from './user.component';
     AppComponent, UserComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule
   ],
   providers: [],
